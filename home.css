@@ -1,0 +1,203 @@
+.vl {
+    border-left: 6px solid green;
+    height: 200px;
+  }
+
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    
+    background-size:cover;
+    background-position: center;
+  }
+
+  .image1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.2)), url(Pc/PC/images/pexels-chevanon-photography-1108099.jpg);
+    height: 600px;
+    background-size:cover;
+    background-position:center;
+}
+.image2{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.2)), url(Pc/PC/images/pexels-helena-lopes-1904105.jpg);
+  height: 600px;
+  background-size:cover;
+  background-position: center;
+
+}
+.image3{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.2)), url(PC/PC/images/pexels-kelvin-valerio-617278.jpg);
+  height: 600px;
+  background-size:cover;
+  background-position: center;
+
+}
+.image4{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.2)), url(PC/PC/images/pexels-josh-hild-6246667.jpg);
+  height: 600px;
+  background-size:cover;
+  background-position: center;
+
+}
+
+.image1-food{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.2)), url(PC/PC/images/pett\ food.jpg);
+  height: 600px;
+  background-size:cover;
+  background-position:center;
+}
+.image2-food{
+background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.2)), url(Pc/PC/images/pet\ food.jpg);
+height: 600px;
+background-size:cover;
+background-position: center;
+
+}
+.image3-food{
+background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.2)), url(PC/PC/images/fish\ foof.jpeg);
+height: 600px;
+background-size:cover;
+background-position: center;
+
+}
+.image4-food{
+background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.2)), url(PC/PC/images/pet\ fooodd.png);
+height: 600px;
+background-size:cover;
+background-position: center;
+
+}
+
+.image1-acc{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.2)), url(PC/PC/images/pet\ acc.jpg);
+  height: 600px;
+  background-size:cover;
+  background-position:center;
+}
+.image2-acc{
+background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.2)), url(Pc/PC/images/pet\ accs.jpg);
+height: 600px;
+background-size:cover;
+background-position: center;
+
+}
+.image3-acc{
+background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.2)), url(PC/PC/images/pet\ accseee.jpg);
+height: 600px;
+background-size:cover;
+background-position: center;
+
+}
+.image4-acc{
+background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.2)), url(PC/PC/images/pet\ accessories.jpg);
+height: 600px;
+background-size:cover;
+background-position: center;
+
+}
+
+.image1-au{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.2)), url(AboutUs/dog.jpg);
+  height: 600px;
+  background-size:cover;
+  background-position:center;
+}
+.image2-au{
+background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.2)), url(AboutUs/bird.jpg);
+height: 600px;
+background-size:cover;
+background-position: center;
+
+}
+.image3-au{
+background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.2)), url(AboutUs/slide1.jpg);
+height: 600px;
+background-size:cover;
+background-position: center;
+
+}
+.image4-au{
+background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.2)), url(AboutUs/cat.jpg);
+height: 600px;
+background-size:cover;
+background-position: center;
+
+}
+
+.image1-bg{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.2)), url(help/h1.jpg);
+  height: 600px;
+  background-size:cover;
+  background-position:center;
+}
+.image2-bg{
+background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.2)), url(help/h2.jpg);
+height: 600px;
+background-size:cover;
+background-position: center;
+
+}
+.image3-bg{
+background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.2)), url(help/h3.jpg);
+height: 600px;
+background-size:cover;
+background-position: center;
+
+}
+.image4-bg{
+background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.2)), url(help/h4.jpg);
+height: 600px;
+background-size:cover;
+background-position: center;
+
+}
+
+
+
+
+
+.navbar{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  
+}
+
+.heading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0.9;
+  
+}
+
+
+.testcard {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.testcard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.userPic {
+  transition: transform .2s; /* Animation */
+}
+
+.userPic:hover {
+      transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.featured2{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.about2{
+  font-size: 40px;
+  text-align: center;
+  margin-top: 70px;
+}

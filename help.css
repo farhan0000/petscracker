@@ -1,0 +1,13 @@
+.faq{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 25px;
+}
+
+
+#accordion{
+    margin-top: 5%;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: inherit;
+}

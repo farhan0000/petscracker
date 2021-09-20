@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/fontawesome-free-5.13.0-web/css/all.min.css">
+   
+
+    <link rel="stylesheet" href="fashion.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="api.css"> 
+    <title>All Page</title>
+</head>
+
+<body>
+
+    
+
+<div class="first">
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+      <li data-target="#demo" data-slide-to="3"></li>
+    </ul>
+    
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+      <div class="image1-acc"></div>
+    </div>
+      <div class="carousel-item">
+        <div class="image2-acc"></div>
+    </div>
+      <div class="carousel-item">
+        <div class="image3-acc"></div>
+    </div>
+      <div class="carousel-item">
+        <div class="image4-acc"></div>
+    </div>
+    </div>
+    
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+  
+
+  <!-- NAV BAR-->
+
+  <nav class="navbar navbar-expand-lg navbar-dark" >
+
+    <!--        <a class="navbar-brand" href="#" style="font-family:Brush Script MT, Brush Script Std, cursive; font-size: 200%;"> Pets Cracker </a> -->
+            <img class="logo" src="PC LOGO/pc logo.png" alt="Card image cap" style="height:6% ; width:6% ;">
+
+       
+            <button  class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" ></span>
+            </button>
+       
+            <div class="collapse navbar-collapse" id="collapsibleNavId" style="margin-left:12%">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active" style="margin-right: 20px;">
+                        <a class="nav-link" href="home.html" style="color: #e6c388;"> <i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 20px;">
+                        <a class="nav-link " href="PetSuppliers.html"> <i class="fas fa-address-card"></i> Pet Supplies</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 20px;">
+                        <a class="nav-link" href="Food.html"> <i class="fas fa-camera-retro"></i> Food </a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 20px;">
+                        <a class="nav-link" href="Accessories.html"> <i class="far fa-comments"></i> Accessories</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 20px;">
+                        <a class="nav-link" href="AllBlogs.html"> <i class="fab fa-usps"></i> Blog</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 20px;">
+                        <a class="nav-link" href="AboutUs.html"> <i class="fas fa-user-friends"></i> About Us</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 20px;">
+                        <a class="nav-link" href="help.html"> <i class="fab fa-teamspeak"></i> Contact Us</a>
+                    </li>
+                  
+       
+                </ul>
+
+
+                <a id="login" class="btn btn-warning btn-sm" asp-controller="User" asp-action="Login" data-caption="SIGN IN"> <i class="fa fa-sign-in-alt"></i> | Sign in </a>
+
+
+            </div>
+</nav>
+
+<div class="heading">
+    <b> <h1 class="about2 body-font;" > PET ACCESSORIES  </h1> </b>
+    <p style="opacity: 0.7; font-size: 130%; font-family: serif;text-align: center;"> Find the best care product for your pet here!</p>
+</div>
+
+
+</div>
+
+<div class="second">
+    <div class="container-fluid" style="margin-top: 5%;">
+        <div class="row">
+            <div class="col" style="text-align: center;">
+                <img class="petsupplierr" src="Logos/pet accesories@4x-8.png" alt="Pet Supplier" style="height: 250px; vertical-align:middle;margin:0% 65%">
+            </div>
+            <div class="col">
+                <img class="group" src="PC/PC/images/Group.png" alt="Group line" style="vertical-align:middle;margin:15% 0px">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="third">
+    <div class="container-fluid" style="margin-top: 5%; padding: 5%; background-color:rgb(240, 240, 240);">
+
+
+      <div class="row">
+        <div class="col">
+          <p style="opacity: 0.7; font-size: 130%; font-family: serif;text-align: left;"> HOME /<span style="font-weight: bolder;"> PET ACCESSORIES</p> </span>
+        </div>
+        <div class="col" style="margin-left: 50%;">
+          <form class="form-inline" asp-controller="Article" asp-action="ArticleSearch" method="get" >
+            <input class="form-control mr-sm-2" type="search" name="search"  placeholder="Search For Accessories" aria-label="Search" >
+            <button class="btn btn-warning my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        </div>
+      </div>
+
+        <div class="row" style=" margin: 4% 5% 0% 5%;">
+            <div class="col-3">
+                <div class="card text-center card-image-js">
+                    <img class="card-img-top " src="./Logos/pet accesories@4x-8.png" alt="Card image cap" style="height: 250px;">
+                    <div class="card-body">
+                     <strong>   <h5 class="card-title" style="font-size:larger;" >PET ACCESSORY</h5> </strong>
+                        <p class="card-text" >@NameOfUser</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529; font-size:large ;">Price</h5> </strong>
+                        <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>                      </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card text-center card-image-js">
+                    <img class="card-img-top" src="./Logos/pet accesories@4x-8.png" alt="Card image cap"  style="height: 250px;">
+                    <div class="card-body">
+                        <strong>   <h5 class="card-title" style="font-size:larger;" >PET ACCESSORY</h5> </strong>
+                        <p class="card-text" >@NameOfUser</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529; font-size:large ;">Price</h5> </strong>
+                        <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+            <div class="card text-center card-image-js" >
+                <img class="card-img-top" src="./Logos/pet accesories@4x-8.png" alt="Card image cap" style="height: 250px;">
+                <div class="card-body">
+                    <strong>   <h5 class="card-title" style="font-size:larger;">PET ACCESSORY</h5> </strong>
+                    <p class="card-text" >@NameOfUser</p>
+                    <strong>   <h5 class="card-title" style="color: #ad9529; font-size:large ;">Price</h5> </strong>
+                    <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>                  </div>
+              </div>
+            </div>
+            <div class="col-3">
+                <div class="card text-center card-image-js" >
+                    <img class="card-img-top " src="./Logos/pet accesories@4x-8.png" alt="Card image cap" style="height: 250px;">
+                    <div class="card-body">
+                        <strong>   <h5 class="card-title" style="font-size:larger;">PET ACCESSORY</h5> </strong>
+                        <p class="card-text" >@NameOfUser</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529;font-size:large ;">Price</h5> </strong>
+                        <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>                      </div>
+                  </div>
+                </div>
+                
+                    
+        </div>
+     
+        <div class="row" style="margin: 4% 5% 0% 5%;">
+            <div class="col-3">
+                <div class="card text-center card-image-js">
+                    <img class="card-img-top " src="./Logos/pet accesories@4x-8.png" alt="Card image cap" style="height: 250px;">
+                    <div class="card-body">
+                     <strong>   <h5 class="card-title" style="font-size:larger;">PET ACCESSORY</h5> </strong>
+                        <p class="card-text" >@NameOfUser</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529; font-size:large ;">Price</h5> </strong>
+                        <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>                      </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card text-center card-image-js">
+                    <img class="card-img-top" src="./Logos/pet accesories@4x-8.png" alt="Card image cap"  style="height: 250px;">
+                    <div class="card-body">
+                        <strong>   <h5 class="card-title" style="font-size:larger;">PET ACCESSORY</h5> </strong>
+                        <p class="card-text" >@NameOfUser</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529; font-size:large ;">Price</h5> </strong>
+                        <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+            <div class="card text-center card-image-js" >
+                <img class="card-img-top" src="./Logos/pet accesories@4x-8.png" alt="Card image cap" style="height: 250px;">
+                <div class="card-body">
+                    <strong>   <h5 class="card-title" style="font-size:larger;">PET ACCESSORY</h5> </strong>
+                    <p class="card-text" >@NameOfUser</p>
+                    <strong>   <h5 class="card-title" style="color: #ad9529; font-size:large ;">Price</h5> </strong>
+                    <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>                  </div>
+              </div>
+            </div>
+            <div class="col-3">
+                <div class="card text-center card-image-js" >
+                    <img class="card-img-top " src="./Logos/pet accesories@4x-8.png" alt="Card image cap" style="height: 250px;">
+                    <div class="card-body">
+                        <strong>   <h5 class="card-title" style="font-size:larger;">PET ACCESSORY</h5> </strong>
+                        <p class="card-text" >@NameOfUser</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529; font-size:large ;">Price</h5> </strong>
+                        <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>                      </div>
+                  </div>
+                </div>
+                
+                    
+        </div>
+    
+        <div class="row" style=" margin: 4% 5% 0% 5%;">
+            <div class="col-3">
+                <div class="card text-center card-image-js">
+                    <img class="card-img-top " src="./Logos/pet accesories@4x-8.png" alt="Card image cap" style="height: 250px;">
+                    <div class="card-body">
+                     <strong>   <h5 class="card-title" style="font-size:larger;">PET ACCESSORY</h5> </strong>
+                        <p class="card-text" >@NameOfUser</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529; font-size:large ;">Price</h5> </strong>
+                        <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>                      </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card text-center card-image-js">
+                    <img class="card-img-top" src="./Logos/pet accesories@4x-8.png" alt="Card image cap"  style="height: 250px;">
+                    <div class="card-body">
+                        <strong>   <h5 class="card-title" style="font-size:larger;">PET ACCESSORY</h5> </strong>
+                        <p class="card-text" >@NameOfUser</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529; font-size:large ;">Price</h5> </strong>
+                        <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+            <div class="card text-center card-image-js" >
+                <img class="card-img-top" src="./Logos/pet accesories@4x-8.png" alt="Card image cap" style="height: 250px;">
+                <div class="card-body">
+                    <strong>   <h5 class="card-title" style="font-size:larger;">PET ACCESSORY</h5> </strong>
+                    <p class="card-text" >@NameOfUser</p>
+                    <strong>   <h5 class="card-title" style="color: #ad9529; font-size:large ;">Price</h5> </strong>
+                    <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>                  </div>
+              </div>
+            </div>
+            <div class="col-3">
+                <div class="card text-center card-image-js" >
+                    <img class="card-img-top " src="./Logos/pet accesories@4x-8.png" alt="Card image cap" style="height: 250px;">
+                    <div class="card-body">
+                        <strong>   <h5 class="card-title" style="font-size:larger;">PET ACCESSORY</h5> </strong>
+                        <p class="card-text" >@NameOfUser</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529; font-size:large ;">Price</h5> </strong>
+                        <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>                      </div>
+                  </div>
+                </div>
+                
+                    
+        </div>
+          
+    </div>
+</div>
+
+<!--
+<div class="forth RELATEDPRODUCTS">
+    <div class="container-fluid" style="margin-top: 5%; padding: 5%; background-color:rgb(240, 240, 240);">
+
+        <b> <h1 class="about2 body-font;" > RELATED PRODUCTS  </h1> </b>
+        <p style="opacity: 0.7; font-size: 130%; font-family: serif;text-align: center;"> Find out your best pet here !</p>
+
+
+        <div class="row" style=" margin: 4% 5% 0% 5%;">
+            <div class="col-3">
+                <div class="card text-center card-image-js">
+                    <img class="card-img-top " src="./Logos/pet splr@4x-8.png" alt="Card image cap" style="height: 250px;">
+                    <div class="card-body">
+                     <strong>   <h5 class="card-title" style="font-size:larger;" >PET NAME</h5> </strong>
+                        <p class="card-text" >@NameOfUser</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529; font-size:large ;">Price</h5> </strong>
+                        <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>                      </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card text-center card-image-js">
+                    <img class="card-img-top" src="./Logos/pet splr@4x-8.png" alt="Card image cap"  style="height: 250px;">
+                    <div class="card-body">
+                        <strong>   <h5 class="card-title" style="font-size:larger;" >PET NAME</h5> </strong>
+                        <p class="card-text" >@NameOfUser</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529; font-size:large ;">Price</h5> </strong>
+                        <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+            <div class="card text-center card-image-js" >
+                <img class="card-img-top" src="./Logos/pet splr@4x-8.png" alt="Card image cap" style="height: 250px;">
+                <div class="card-body">
+                    <strong>   <h5 class="card-title" style="font-size:larger;">PET NAME</h5> </strong>
+                    <p class="card-text" >@NameOfUser</p>
+                    <strong>   <h5 class="card-title" style="color: #ad9529; font-size:large ;">Price</h5> </strong>
+                    <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>                  </div>
+              </div>
+            </div>
+            <div class="col-3">
+                <div class="card text-center card-image-js" >
+                    <img class="card-img-top " src="./Logos/pet splr@4x-8.png" alt="Card image cap" style="height: 250px;">
+                    <div class="card-body">
+                        <strong>   <h5 class="card-title" style="font-size:larger;">PET NAME</h5> </strong>
+                        <p class="card-text" >@NameOfUser</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529;font-size:large ;">Price</h5> </strong>
+                        <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>                      </div>
+                  </div>
+                </div>
+                
+                    
+        </div>
+     
+        <div class="row" style="margin: 4% 5% 0% 5%;">
+            <div class="col-3">
+                <div class="card text-center card-image-js">
+                    <img class="card-img-top " src="./Logos/pet splr@4x-8.png" alt="Card image cap" style="height: 250px;">
+                    <div class="card-body">
+                     <strong>   <h5 class="card-title" style="font-size:larger;">PET NAME</h5> </strong>
+                        <p class="card-text" >@NameOfUser</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529; font-size:large ;">Price</h5> </strong>
+                        <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>                      </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card text-center card-image-js">
+                    <img class="card-img-top" src="./Logos/pet splr@4x-8.png" alt="Card image cap"  style="height: 250px;">
+                    <div class="card-body">
+                        <strong>   <h5 class="card-title" style="font-size:larger;">PET NAME</h5> </strong>
+                        <p class="card-text" >@NameOfUser</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529; font-size:large ;">Price</h5> </strong>
+                        <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+            <div class="card text-center card-image-js" >
+                <img class="card-img-top" src="./Logos/pet splr@4x-8.png" alt="Card image cap" style="height: 250px;">
+                <div class="card-body">
+                    <strong>   <h5 class="card-title" style="font-size:larger;">PET NAME</h5> </strong>
+                    <p class="card-text" >@NameOfUser</p>
+                    <strong>   <h5 class="card-title" style="color: #ad9529; font-size:large ;">Price</h5> </strong>
+                    <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>                  </div>
+              </div>
+            </div>
+            <div class="col-3">
+                <div class="card text-center card-image-js" >
+                    <img class="card-img-top " src="./Logos/pet splr@4x-8.png" alt="Card image cap" style="height: 250px;">
+                    <div class="card-body">
+                        <strong>   <h5 class="card-title" style="font-size:larger;">PET NAME</h5> </strong>
+                        <p class="card-text" >@NameOfUser</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529; font-size:large ;">Price</h5> </strong>
+                        <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>                      </div>
+                  </div>
+                </div>
+                
+                    
+        </div>
+    
+        <div class="row" style=" margin: 4% 5% 0% 5%;">
+            <div class="col-3">
+                <div class="card text-center card-image-js">
+                    <img class="card-img-top " src="./Logos/pet splr@4x-8.png" alt="Card image cap" style="height: 250px;">
+                    <div class="card-body">
+                     <strong>   <h5 class="card-title" style="font-size:larger;">PET NAME</h5> </strong>
+                        <p class="card-text" >@NameOfUser</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529; font-size:large ;">Price</h5> </strong>
+                        <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>                      </div>
+                  </div>
+            </div>
+            <div class="col-3">
+                <div class="card text-center card-image-js">
+                    <img class="card-img-top" src="./Logos/pet splr@4x-8.png" alt="Card image cap"  style="height: 250px;">
+                    <div class="card-body">
+                        <strong>   <h5 class="card-title" style="font-size:larger;">PET NAME</h5> </strong>
+                        <p class="card-text" >@NameOfUser</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529; font-size:large ;">Price</h5> </strong>
+                        <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>                    </div>
+                  </div>
+            </div>
+            <div class="col-3">
+            <div class="card text-center card-image-js" >
+                <img class="card-img-top" src="./Logos/pet splr@4x-8.png" alt="Card image cap" style="height: 250px;">
+                <div class="card-body">
+                    <strong>   <h5 class="card-title" style="font-size:larger;">PET NAME</h5> </strong>
+                    <p class="card-text" >@NameOfUser</p>
+                    <strong>   <h5 class="card-title" style="color: #ad9529; font-size:large ;">Price</h5> </strong>
+                    <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>                  </div>
+              </div>
+            </div>
+            <div class="col-3">
+                <div class="card text-center card-image-js" >
+                    <img class="card-img-top " src="./Logos/pet splr@4x-8.png" alt="Card image cap" style="height: 250px;">
+                    <div class="card-body">
+                        <strong>   <h5 class="card-title" style="font-size:larger;">PET NAME</h5> </strong>
+                        <p class="card-text" >@NameOfUser</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529; font-size:large ;">Price</h5> </strong>
+                        <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>                      </div>
+                  </div>
+                </div>
+                
+                    
+        </div>
+          
+    </div>
+</div>
+
+-->
+
+
+<div class="forth">
+  <div class="container-fluid" style="padding: 3% 5% 9% 5%;">
+    <div class="row">
+      <div class="col">
+        <b> <h1 class="featured2" style="color: rgb(28, 28, 58); opacity: 0.8; padding-top: 3%;" > LATEST </h1> </b>
+        <p style="color:rgb(41, 40, 40) ; opacity:0.5 ; font-size: 100%; font-family: serif; text-align: center;"> New uploads to the website.</p>
+      </div>
+      <div class="col">
+        <b> <h1 class="featured2" style="color: rgb(28, 28, 58); opacity: 0.8; padding-top: 3%;" > PET SUPLLIERS </h1> </b>
+        <p style="color:rgb(41, 40, 40) ; opacity:0.5 ; font-size: 100%; font-family: serif; text-align: center;"> Featured Add's for PETS.</p>      </div>
+      <div class="col">
+        <b> <h1 class="featured2" style="color: rgb(28, 28, 58); opacity: 0.8; padding-top: 3%;" > FOOD </h1> </b>
+        <p style="color:rgb(41, 40, 40) ; opacity:0.5 ; font-size: 100%; font-family: serif; text-align: center;"> Featured Add's for FOOD.</p>      </div>
+      <div class="col">
+        <b> <h1 class="featured2" style="color: rgb(28, 28, 58); opacity: 0.8; padding-top: 3%;" > ACCESSORIES </h1> </b>
+        <p style="color:rgb(41, 40, 40) ; opacity:0.5 ; font-size: 100%; font-family: serif; text-align: center;"> Featured Add's for ACCESSORIES.</p>      </div>
+    </div>
+    <div class="row" style="margin-top: 2%;">
+      <div class="col">
+       <div class="row">
+         <div class="col-6">
+          <img class="petsupplierr" src="lib/images/bg2.jpg" alt="Pet Supplier" style="height: 60px; vertical-align:middle;margin:0% 30%">
+         </div>
+         <div class="col-4" style="margin-top: 0%; margin-left: 1%;">
+          <hr style="width:50%;text-align:left;margin-left:0">
+          <b> <h1 class="bottom" style="color: rgb(28, 28, 58); opacity: 0.9;" > NAME</h1> </b>
+          <p style="color:rgb(41, 40, 40) ; opacity:0.5 ; font-size: 90%; font-family: serif;"> PKR 5000 </p>      
+        </div>
+        </div>
+       </div>
+       <div class="col">
+        <div class="row">
+          <div class="col-6">
+           <img class="petsupplierr" src="lib/images/bg2.jpg" alt="Pet Supplier" style="height: 60px; vertical-align:middle;margin:0% 30%">
+          </div>
+          <div class="col-4" style="margin-top: 0%; margin-left: 1%;">
+           <hr style="width:50%;text-align:left;margin-left:0">
+           <b> <h1 class="bottom" style="color: rgb(28, 28, 58); opacity: 0.9;" > NAME</h1> </b>
+           <p style="color:rgb(41, 40, 40) ; opacity:0.5 ; font-size: 90%; font-family: serif;"> PKR 5000 </p>      
+         </div>
+         </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="col-6">
+             <img class="petsupplierr" src="lib/images/bg2.jpg" alt="Pet Supplier" style="height: 60px; vertical-align:middle;margin:0% 30%">
+            </div>
+            <div class="col-4" style="margin-top: 0%; margin-left: 1%;">
+             <hr style="width:50%;text-align:left;margin-left:0">
+             <b> <h1 class="bottom" style="color: rgb(28, 28, 58); opacity: 0.9;" > NAME</h1> </b>
+             <p style="color:rgb(41, 40, 40) ; opacity:0.5 ; font-size: 90%; font-family: serif;"> PKR 5000 </p>      
+           </div>
+           </div>
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="col-6">
+               <img class="petsupplierr" src="lib/images/bg2.jpg" alt="Pet Supplier" style="height: 60px; vertical-align:middle;margin:0% 30%">
+              </div>
+              <div class="col-4" style="margin-top: 0%; margin-left: 1%;">
+               <hr style="width:50%;text-align:left;margin-left:0">
+               <b> <h1 class="bottom" style="color: rgb(28, 28, 58); opacity: 0.9;" > NAME</h1> </b>
+               <p style="color:rgb(41, 40, 40) ; opacity:0.5 ; font-size: 90%; font-family: serif;"> PKR 5000 </p>      
+             </div>
+             </div>
+            </div>
+    </div>
+  <div class="row" style="margin-top: 2%;">
+    <div class="col">
+      <div class="row">
+        <div class="col-6">
+         <img class="petsupplierr" src="lib/images/bg2.jpg" alt="Pet Supplier" style="height: 60px; vertical-align:middle;margin:0% 30%">
+        </div>
+        <div class="col-4" style="margin-top: 0%; margin-left: 1%;">
+         <hr style="width:50%;text-align:left;margin-left:0">
+         <b> <h1 class="bottom" style="color: rgb(28, 28, 58); opacity: 0.9;" > NAME</h1> </b>
+         <p style="color:rgb(41, 40, 40) ; opacity:0.5 ; font-size: 90%; font-family: serif;"> PKR 5000 </p>      
+       </div>
+       </div>
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="col-6">
+           <img class="petsupplierr" src="lib/images/bg2.jpg" alt="Pet Supplier" style="height: 60px; vertical-align:middle;margin:0% 30%">
+          </div>
+          <div class="col-4" style="margin-top: 0%; margin-left: 1%;">
+           <hr style="width:50%;text-align:left;margin-left:0">
+           <b> <h1 class="bottom" style="color: rgb(28, 28, 58); opacity: 0.9;" > NAME</h1> </b>
+           <p style="color:rgb(41, 40, 40) ; opacity:0.5 ; font-size: 90%; font-family: serif;"> PKR 5000 </p>      
+         </div>
+         </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="col-6">
+             <img class="petsupplierr" src="lib/images/bg2.jpg" alt="Pet Supplier" style="height: 60px; vertical-align:middle;margin:0% 30%">
+            </div>
+            <div class="col-4" style="margin-top: 0%; margin-left: 1%;">
+             <hr style="width:50%;text-align:left;margin-left:0">
+             <b> <h1 class="bottom" style="color: rgb(28, 28, 58); opacity: 0.9;" > NAME</h1> </b>
+             <p style="color:rgb(41, 40, 40) ; opacity:0.5 ; font-size: 90%; font-family: serif;"> PKR 5000 </p>      
+           </div>
+           </div>
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="col-6">
+               <img class="petsupplierr" src="lib/images/bg2.jpg" alt="Pet Supplier" style="height: 60px; vertical-align:middle;margin:0% 30%">
+              </div>
+              <div class="col-4" style="margin-top: 0%; margin-left: 1%;">
+               <hr style="width:50%;text-align:left;margin-left:0">
+               <b> <h1 class="bottom" style="color: rgb(28, 28, 58); opacity: 0.9;" > NAME</h1> </b>
+               <p style="color:rgb(41, 40, 40) ; opacity:0.5 ; font-size: 90%; font-family: serif;"> PKR 5000 </p>      
+             </div>
+             </div>
+            </div>
+  </div>
+  <div class="row" style="margin-top: 2%;">
+    <div class="col">
+     <div class="row">
+       <div class="col-6">
+        <img class="petsupplierr" src="lib/images/bg2.jpg" alt="Pet Supplier" style="height: 60px; vertical-align:middle;margin:0% 30%">
+       </div>
+       <div class="col-4" style="margin-top: 0%; margin-left: 1%;">
+        <hr style="width:50%;text-align:left;margin-left:0">
+        <b> <h1 class="bottom" style="color: rgb(28, 28, 58); opacity: 0.9;" > NAME</h1> </b>
+        <p style="color:rgb(41, 40, 40) ; opacity:0.5 ; font-size: 90%; font-family: serif;"> PKR 5000 </p>      
+      </div>
+      </div>
+     </div>
+     <div class="col">
+      <div class="row">
+        <div class="col-6">
+         <img class="petsupplierr" src="lib/images/bg2.jpg" alt="Pet Supplier" style="height: 60px; vertical-align:middle;margin:0% 30%">
+        </div>
+        <div class="col-4" style="margin-top: 0%; margin-left: 1%;">
+         <hr style="width:50%;text-align:left;margin-left:0">
+         <b> <h1 class="bottom" style="color: rgb(28, 28, 58); opacity: 0.9;" > NAME</h1> </b>
+         <p style="color:rgb(41, 40, 40) ; opacity:0.5 ; font-size: 90%; font-family: serif;"> PKR 5000 </p>      
+       </div>
+       </div>
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="col-6">
+           <img class="petsupplierr" src="lib/images/bg2.jpg" alt="Pet Supplier" style="height: 60px; vertical-align:middle;margin:0% 30%">
+          </div>
+          <div class="col-4" style="margin-top: 0%; margin-left: 1%;">
+           <hr style="width:50%;text-align:left;margin-left:0">
+           <b> <h1 class="bottom" style="color: rgb(28, 28, 58); opacity: 0.9;" > NAME</h1> </b>
+           <p style="color:rgb(41, 40, 40) ; opacity:0.5 ; font-size: 90%; font-family: serif;"> PKR 5000 </p>      
+         </div>
+         </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="col-6">
+             <img class="petsupplierr" src="lib/images/bg2.jpg" alt="Pet Supplier" style="height: 60px; vertical-align:middle;margin:0% 30%">
+            </div>
+            <div class="col-4" style="margin-top: 0%; margin-left: 1%;">
+             <hr style="width:50%;text-align:left;margin-left:0">
+             <b> <h1 class="bottom" style="color: rgb(28, 28, 58); opacity: 0.9;" > NAME</h1> </b>
+             <p style="color:rgb(41, 40, 40) ; opacity:0.5 ; font-size: 90%; font-family: serif;"> PKR 5000 </p>      
+           </div>
+           </div>
+          </div>
+  </div>
+ </div>
+</div>
+    
+
+
+
+ <!--    FOOTER     -->
+
+ <div class="footer" style="background-color:#dfcd80">
+      
+  <footer class="text-gray-700 body-font">
+    <div class="container px-5 py-10 mx-auto flex items-center sm:flex-row flex-col">
+      <img class="logo" src="PC LOGO/pc logo.png" alt="Card image cap" style="height:6% ; width:6% ; opacity: 0.8;">
+      <a class="navbar-brand" href="#" style="font-family:Brush Script MT, Brush Script Std, cursive; font-size: 200%; padding: 0px; margin: 0px; border: 0px;">  Pets Cracker </a>
+    
+      
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-8">© 2021 pets HUB —
+        <a href="https://twitter.com/weeduu619" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">contact@petscracker.com</a>
+      </p>
+      
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-8 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+
+
+ </div>
+
+
+       <script src="lib/jquery/jquery-3.4.1.min.js"></script>
+       <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+       <script src="home.js"></script>
+
+
+
+</body>
+
+</html>

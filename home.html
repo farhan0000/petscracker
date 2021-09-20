@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/fontawesome-free-5.13.0-web/css/all.min.css">
+    <link rel="pc-logo-icon" href="PC LOGO/pc logo.png">
+    <link rel="stylesheet" href="fashion.css">
+    <link rel="stylesheet" href="api.css"> 
+    <title>Home Page</title>
+</head>
+<body>
+    
+    <div class="home">
+
+      <nav class="navbar navbar-expand-lg navbar-dark" >
+
+        <!--        <a class="navbar-brand" href="#" style="font-family:Brush Script MT, Brush Script Std, cursive; font-size: 200%;"> Pets Cracker </a> -->
+                <img class="logo" src="PC LOGO/pc logo.png" alt="Card image cap" style="height:6% ; width:6% ;">
+    
+           
+                <button  class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" ></span>
+                </button>
+           
+                <div class="collapse navbar-collapse" id="collapsibleNavId" style="margin-left:12%">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active" style="margin-right: 20px;">
+                            <a class="nav-link" href="home.html" style="color: #e6c388;"> <i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 20px;">
+                            <a class="nav-link " href="PetSuppliers.html"> <i class="fas fa-address-card"></i> Pet Supplies</a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 20px;">
+                            <a class="nav-link" href="Food.html"> <i class="fas fa-camera-retro"></i> Food </a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 20px;">
+                            <a class="nav-link" href="Accessories.html"> <i class="far fa-comments"></i> Accessories</a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 20px;">
+                            <a class="nav-link" href="AllBlogs.html"> <i class="fab fa-usps"></i> Blog</a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 20px;">
+                            <a class="nav-link" href="AboutUs.html"> <i class="fas fa-user-friends"></i> About Us</a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 20px;">
+                            <a class="nav-link" href="help.html"> <i class="fab fa-teamspeak"></i> Contact Us</a>
+                        </li>
+                      
+           
+                    </ul>
+    
+    
+                    <a id="login" class="btn btn-warning btn-sm" asp-controller="User" asp-action="Login" data-caption="SIGN IN"> <i class="fa fa-sign-in-alt"></i> | Sign in </a>
+    
+    
+                </div>
+    </nav>
+       
+
+        <div class="contaimer-fluid">
+            <div class="row">
+                <div class="col">
+
+                    <h2 class="home2"> Buy & Sell Pets MarketPlace</h2>
+                    <p style="text-align: center; padding-left: 20%; padding-right: 20%; color: rgb(212, 223, 233);">Are you looking for a pet near you? The pet cracker is a one-stop online shop for you. 
+                        Here you will shop for the best dog food, cat food and pet accessories for pets. Also, 
+                        we have different pets for sale including dogs, cats, fish, birds, rabbits, sheep, goats and others.
+                         We are proud to say that you can find any pet you want at an affordable price</p>
+                   
+
+                </div>
+                <div class="col">
+
+                </div>
+                
+            </div>
+        </div>
+       
+        <div class="container-fluid">
+            <div class="row" style="margin-top: 3%; margin-right: 5%; margin-left: 1%;">
+                <div class="col" style="background-color:rgb(159, 153, 153) ; padding: 3%;">
+                    <div class="d-flex" style="margin-left: 20%;">
+                        <form class="form-inline my-2 my-lg-0" asp-controller="Article" asp-action="ArticleSearch" method="get">
+                            <input class="form-control mr-sm-2" type="search" name="search"  placeholder="Search For Pets" aria-label="Search">
+                           
+                            <button class="btn btn-warning my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col">
+
+
+
+                </div>
+                
+            </div>
+        </div>    
+
+     </div>
+
+     <!--    EXPLORE OUR WEBSITE     -->
+<div class="exlore">
+
+     <b> <h1 class="about2 text-gray-700 body-font;" > FEATURED ADDS  </h1> </b>
+       <p style="color:rgb(41, 40, 40) ; opacity:0.5 ; font-size: 130%; font-family: serif;text-align: center;"> Explore the Hot Deals.</p>
+
+
+     <div class="container-fluid">
+        <div class="row" style="margin-top: 4%;">
+            <div class="col-2" style="margin-top: 4%; margin-left: 5%;">
+
+                <img class="card-img-top " src="Logos/pet splr@4x-8.png" alt="Card image cap" style="height: 200px;">
+
+
+
+            </div>
+            <div class="offset-1 col-2">
+                <div class="card text-center card-image-js">
+                    <img class="card-img-top " src="PC/PC/images/logo.png" alt="Card image cap" style="height: 200px;">
+                    <div class="card-body">
+                     <strong>   <h5 class="card-title" style="font-size:larger;">NAME</h5> </strong>
+                        <p class="card-text" >@NameOfSeller</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529;">Price</h5> </strong>
+                       <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>
+                      </div>
+                  </div>
+            </div>
+            <div class="col-2">
+                <div class="card text-center card-image-js">
+                    <img class="card-img-top" src="PC/PC/images/logo.png" alt="Card image cap"  style="height: 200px;">
+                    <div class="card-body">
+                        <strong>   <h5 class="card-title" >NAME</h5> </strong>
+                        <p class="card-text" >@NameOfSeller</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529;">Price</h5> </strong>
+                        <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>
+                      </div>
+                  </div>
+            </div>
+            <div class="col-2">
+            <div class="card text-center card-image-js" >
+                <img class="card-img-top" src="PC/PC/images/logo.png" alt="Card image cap" style="height: 200px;">
+                <div class="card-body">
+                    <strong>   <h5 class="card-title" >NAME</h5> </strong>
+                    <p class="card-text" >@NameOfSeller</p>
+                    <strong>   <h5 class="card-title" style="color: #ad9529;">Price</h5> </strong>
+                    <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-2">
+                <div class="card text-center card-image-js" >
+                    <img class="card-img-top " src="PC/PC/images/logo.png" alt="Card image cap" style="height: 200px;">
+                    <div class="card-body">
+                        <strong>   <h5 class="card-title" >NAME</h5> </strong>
+                        <p class="card-text" >@NameOfSeller</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529;">Price</h5> </strong>
+                        <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>
+                      </div>
+                  </div>
+                </div>
+                
+                    
+        </div>
+     
+        <div class="row" style="margin-top: 5%; margin-top: 4%; margin-left: 5%;">
+            <div class="col-2">
+                <div class="card text-center card-image-js">
+                    <img class="card-img-top" src="PC/PC/images/logo.png" alt="Card image cap" style="height: 200px;">
+                    <div class="card-body">
+                        <strong>   <h5 class="card-title" >NAME</h5> </strong>
+                        <p class="card-text" >@NameOfSeller</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529;">Price</h5> </strong>
+                        <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>
+                      </div>
+                  </div>
+            </div>
+            <div class="col-2">
+                <div class="card text-center card-image-js">
+                    <img class="card-img-top" src="PC/PC/images/logo.png" alt="Card image cap"  style="height: 200px;">
+                    <div class="card-body">
+                        <strong>   <h5 class="card-title" >NAME</h5> </strong>
+                        <p class="card-text" >@NameOfSeller</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529;">Price</h5> </strong>
+                        <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>
+                      </div>
+                  </div>
+            </div>
+            <div class="col-2">
+            <div class="card text-center card-image-js" >
+                <img class="card-img-top" src="PC/PC/images/logo.png" alt="Card image cap" style="height: 200px;">
+                <div class="card-body">
+                    <strong>   <h5 class="card-title" >NAME</h5> </strong>
+                    <p class="card-text" >@NameOfSeller</p>
+                    <strong>   <h5 class="card-title" style="color: #ad9529;">Price</h5> </strong>
+                    <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-2">
+                <div class="card text-center card-image-js" >
+                    <img class="card-img-top" src="PC/PC/images/logo.png" alt="Card image cap" style="height: 200px;">
+                    <div class="card-body">
+                        <strong>   <h5 class="card-title" >NAME</h5> </strong>
+                        <p class="card-text" >@NameOfSeller</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529;">Price</h5> </strong>
+                        <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>
+                      </div>
+                  </div>
+            </div>
+            <div class="offset-1 col-2" style="margin-top: 3%; margin-left: 13%;">
+                    <img class="card-img-top" src="Logos/pet food@4x-8.png" alt="Card image cap" style="height: 200px;">
+
+            </div>
+                
+                    
+        </div>
+    
+        <div class="row" style="margin-top: 5%; margin-bottom: 5%;">
+            <div class="col-2" style="margin-top: 3%; margin-left: 5%;">
+
+                <img class="card-img-top " src="Logos/pet accesories@4x-8.png" alt="Card image cap" style="height: 200px;">
+
+
+
+            </div>
+            <div class="offset-1 col-2">
+                <div class="card text-center card-image-js">
+                    <img class="card-img-top" src="PC/PC/images/logo.png" alt="Card image cap" style="height: 200px;">
+                    <div class="card-body">
+                        <strong>   <h5 class="card-title" >NAME</h5> </strong>
+                        <p class="card-text" >@NameOfSeller</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529;">Price</h5> </strong>
+                        <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>
+                      </div>
+                  </div>
+            </div>
+            <div class="col-2">
+                <div class="card text-center card-image-js">
+                    <img class="card-img-top" src="PC/PC/images/logo.png" alt="Card image cap"  style="height: 200px;">
+                    <div class="card-body">
+                        <strong>   <h5 class="card-title" >NAME</h5> </strong>
+                        <p class="card-text" >@NameOfSeller</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529;">Price</h5> </strong>
+                        <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>
+                      </div>
+                  </div>
+            </div>
+            <div class="col-2">
+            <div class="card text-center card-image-js" >
+                <img class="card-img-top" src="PC/PC/images/logo.png" alt="Card image cap" style="height: 200px;">
+                <div class="card-body">
+                    <strong>   <h5 class="card-title" >NAME</h5> </strong>
+                    <p class="card-text" >@NameOfSeller</p>
+                    <strong>   <h5 class="card-title" style="color: #ad9529;">Price</h5> </strong>
+                    <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-2">
+                <div class="card text-center card-image-js" >
+                    <img class="card-img-top" src="PC/PC/images/logo.png" alt="Card image cap" style="height: 200px;">
+                    <div class="card-body">
+                        <strong>   <h5 class="card-title" >NAME</h5> </strong>
+                        <p class="card-text" >@NameOfSeller</p>
+                        <strong>   <h5 class="card-title" style="color: #ad9529;">Price</h5> </strong>
+                        <a href="single.html" class="btn btn-warning" style="font-family: cursive;">OPEN</a>
+                      </div>
+                  </div>
+                </div>
+                
+                    
+        </div>
+    
+    
+    </div>
+</div>
+
+     <!--    OUR SERVICES     -->
+
+    <div class="services" style="background-color:#dfcd80; margin-top: 3%;">
+         <section class="text-gray-700 body-font">
+             <div class="container px-15 py-0 mx-auto">
+               <div class="flex flex-col text-center w-full mb-20">
+                 <b> <h1 class="portfolio2" > OUR SERVICES </h1> </b>
+                 <p style="color:rgb(41, 40, 40) ; opacity:0.5 ; font-size: 130%; font-family: serif;"> Know more about us.Click to check it out!</p>
+               </div>
+             
+             <div class="container-fluid">
+               <div class="row"> 
+               <div class="col" style="text-align: center;"> 
+               <img src="Logos/pet splr@4x-8.png" class="rounded pic1" style="opacity: 0.6; margin-bottom: 20%">
+ 
+                </div>
+                <div class="col">
+                  <img src="Logos/pet food@4x-8.png" class="rounded pic1" style="opacity: 0.6; margin-bottom: 20%">
+ 
+                 </div>
+                <div class=" col">
+                  <img src="Logos/pet accesories@4x-8.png" class="rounded pic1" style="opacity: 0.6; margin-bottom: 20%">
+ 
+                 </div>
+              
+                
+  
+                
+ 
+               </div>
+             </div>
+           </div>
+            </section>
+            
+      </div>
+
+       <!--   NEWSLETTER     -->
+
+     <div class="newsletter">
+
+      <b> <h1 class="about2 text-gray-700 body-font;" > SUBSCRIBE TO NEWSLETTER  </h1> </b>
+      <p style="color:rgb(41, 40, 40) ; opacity:0.5 ; font-size: 130%; font-family: serif;text-align: center;"> Join our subscribers list to get the latest news, updates and special offers delivered directly in your inbox.</p>
+ 
+ 
+      <div class="container-fluid" style="margin-top: 3%; padding:5%">
+         <div class="row">
+             <div class="col-4" style="text-align:right;" >
+                 <div class="icon-box mx-auto">						
+                     <i class="fa fa-envelope-open fa-7x ; text-gray-900"></i>
+                 </div>
+             </div>
+              <div class=" col-5" style="text-align:left; margin-top: 3%;">
+                 <div class="input-group">
+                     <input type="email" class="form-control" placeholder="Enter your email" required>
+                     <div class="input-group-append">
+                         <input type="submit" class="btn btn-primary" value="Subscribe">
+                     </div>
+                 </div>
+              </div>
+          </div>
+      </div>
+     </div>
+       
+
+     <!--   BOXES     -->
+
+
+
+    <div class="Boxes card-group" style="text-align: center; margin-top: 3%;">
+      <div class="card" style="background-color: #dfcd80; padding: 5% 0%;">
+        <div class="card-body">
+          <p style="font-weight: bolder; font-size: xx-large;"><i class="fa fa-handshake ; text-gray-900"></i> GREAT VALUE </p>
+        </div>
+        
+      </div>
+      <div class="card" style="background-color: #dfcd80; padding: 5% 0%;">
+       
+        <div class="card-body">
+          <p style="font-weight: bolder; font-size: xx-large;"><i class="fa fa-clock ; text-gray-900"></i> 24/7 SUPPORT </p>
+      </div>
+        
+      </div>
+      <div class="card" style="background-color: #dfcd80; padding: 5% 0%;">
+       
+        <div class="card-body">
+          <p style="font-weight: bolder; font-size: xx-large;"><i class="fa fa-user-shield ; text-gray-900"></i> SAFE POLICY </p>
+      </div>
+        
+      </div>
+      <div class="card" style="background-color: #dfcd80; padding: 5% 0%;">
+          
+          <div class="card-body">
+            <p style="font-weight: bolder; font-size: xx-large;"><i class="fa fa-running ; text-gray-900"></i> EASY ACCESS </p>
+          </div>
+          
+        </div>
+    </div>
+         
+
+    <!--   BLOGS     -->
+
+    <div class="Blog1" style="margin: 5% 0%;">
+
+      <b> <h1 class="about2 text-gray-700 body-font;" > BLOGS  </h1> </b>
+      <p style="color:rgb(41, 40, 40) ; opacity:0.5 ; font-size: 130%; font-family: serif;text-align: center;"> Read the blog of your favourite topic</p>
+
+         <div class="container-fluid" style="margin-top: 3%;">
+             <div class="row" style="margin-left: 6%; margin-right: 5%;">
+              <div class="card-deck">
+                  <div class="card">
+                    <img class="card-img-top" src="PC/PC/images/bg2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <strong>   <h5 class="card-title" style="font-size:x-large; text-align: center;" >TITLE</h5> </strong>
+                      <hr>
+                      <p class="card-text" style="margin-top: 2%;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer" style="text-align: center;">
+                      <a href="single.html" class="btn btn-warning" >EXPLORE</a>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <img class="card-img-top" src="PC/PC/images/bg2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <strong>   <h5 class="card-title" style="font-size:x-large; text-align: center;" >TITLE</h5> </strong>
+                      <hr>                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="card-footer" style="text-align: center;">
+                      <a href="single.html" class="btn btn-warning" >EXPLORE</a>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <img class="card-img-top" src="PC/PC/images/bg2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <strong>   <h5 class="card-title" style="font-size:x-large; text-align: center;" >TITLE</h5> </strong>
+                      <hr>                                <p class="card-text">This is a wider cajbdvb jdcbxhvdbcx vbdjcxhbkdfsbvjyasdio jhbfdjzxnifgbvjd rd with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                    <div class="card-footer" style="text-align: center;">
+                      <a href="single.html" class="btn btn-warning" >EXPLORE</a>
+                  </div>
+                  </div>
+                </div>
+             </div>
+             <div class="row" style="margin:3% 6% 3% 8%">
+              <button type="button" class="btn btn-warning btn-lg btn-block">View All Blogs</button>
+             </div>
+         </div>
+
+     </div>
+
+        
+  
+        <!--    TEAM     -->
+
+        <div class="team"  style="background-color:#dfcd80; margin-top: 0%;">
+          <section class="text-gray-700 body-font">
+              <div class="container px-5 py-12 mx-auto">
+                <div class="flex flex-col text-center w-full mb-20">
+                  <b> <h1 class="team2" > TEAM </h1> </b>
+                  <p class="lg:w-2/3 mx-auto leading-relaxed text-base" style="margin-top: 2%;">  "One piece of log creates a small fire, adequate to warm you up, add just a few more pieces to blast an immense bonfire, large enough to warm up your entire circle of friends; needless to say that individuality counts but teamwork dynamites." – Jin Kwon </p>
+                </div>
+                <div class="flex flex-wrap -m-4">
+                  <div class="p-4 lg:w-1/2">
+                    <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                      <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://source.unsplash.com/200x200/?pictures,man">
+                      <div class="flex-grow sm:pl-8">
+                        <h2 class="title-font font-medium text-lg text-gray-900">MUHAMMAD WALEED</h2>
+                        <h3 class="text-gray-500 mb-3">Fashion</h3>
+                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae gravida mauris, non sodales lectus.</p>
+                        <span class="inline-flex">
+                          <a class="text-gray-500">
+                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                            </svg>
+                          </a>
+                          <a class="ml-2 text-gray-500">
+                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                            </svg>
+                          </a>
+                          <a class="ml-2 text-gray-500">
+                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                              <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                            </svg>
+                          </a>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-4 lg:w-1/2">
+                    <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                      <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://source.unsplash.com/201x201/?profilepicture,man">
+                      <div class="flex-grow sm:pl-8">
+                        <h2 class="title-font font-medium text-lg text-gray-900">FARHAN ASLAM</h2>
+                        <h3 class="text-gray-500 mb-3">Grooming</h3>
+                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae gravida mauris, non sodales lectus.</p>
+                        <span class="inline-flex">
+                          <a class="text-gray-500">
+                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                            </svg>
+                          </a>
+                          <a class="ml-2 text-gray-500">
+                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                            </svg>
+                          </a>
+                          <a class="ml-2 text-gray-500">
+                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                              <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                            </svg>
+                          </a>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                
+                </div>
+              </div>
+            </section>
+  
+  
+       </div>
+
+               
+
+               <!--    TESTIMONIALS     -->
+
+        <div class="testimonials" style="padding-bottom: 7%;">
+
+          <b> <h1 class="team2" style="color: rgb(28, 28, 58); opacity: 0.8; margin-top: 100px;" > TESTIMONIALS </h1> </b>
+          <p style="color:rgb(41, 40, 40) ; opacity:0.5 ; font-size: 130%; font-family: serif; text-align: center;"> Client satisfaction is our first priority.</p>
+   
+   
+          <section class="text-gray-700 body-font">
+           <div class="container px-5 py-25 mx-auto">
+             <div class="flex flex-wrap -m-4">
+               <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+                 <div class="h-full text-center">
+                   <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="https://source.unsplash.com/302x302/?profilepicture,man">
+                   <p class="leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae gravida mauris, non sodales lectus. Etiam facilisis, nulla et mollis posuere, nunc massa efficitur elit, semper mollis tortor risus ac quam. Nunc sagittis vel enim nec ornare. Suspendisse potenti. Curabitur tempor lacus neque.</p>
+                   <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+                   <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Syed Samar</h2>
+                   <p class="text-gray-500">Web Developer</p>
+                 </div>
+               </div>
+               <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+                 <div class="h-full text-center">
+                   <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="https://source.unsplash.com/301x301/?profilepicture,man">
+                   <p class="leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae gravida mauris, non sodales lectus. Etiam facilisis, nulla et mollis posuere, nunc massa efficitur elit, semper mollis tortor risus ac quam. Nunc sagittis vel enim nec ornare. Suspendisse potenti. Curabitur tempor lacus neque.</p>
+                   <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+                   <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Farhan Aslam</h2>
+                   <p class="text-gray-500">Graphic Designer</p>
+                 </div>
+               </div>
+               <div class="lg:w-1/3 lg:mb-0 p-4">
+                 <div class="h-full text-center">
+                   <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="https://source.unsplash.com/300x300/?profilepicture,man">
+                   <p class="leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae gravida mauris, non sodales lectus. Etiam facilisis, nulla et mollis posuere, nunc massa efficitur elit, semper mollis tortor risus ac quam. Nunc sagittis vel enim nec ornare. Suspendisse potenti. Curabitur tempor lacus neque.</p>
+                   <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+                   <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Zain  Akram</h2>
+                   <p class="text-gray-500">Linux Expert</p>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </section>
+   
+   
+        </div> 
+
+<!--    FOOTER     -->
+
+    <div class="footer" style="background-color:#dfcd80">
+      
+        <footer class="text-gray-700 body-font">
+          <div class="container px-5 py-10 mx-auto flex items-center sm:flex-row flex-col">
+            <img class="logo" src="PC LOGO/pc logo.png" alt="Card image cap" style="height:6% ; width:6% ; opacity: 0.8;">
+            <a class="navbar-brand" href="#" style="font-family:Brush Script MT, Brush Script Std, cursive; font-size: 200%; padding: 0px; margin: 0px; border: 0px;">  Pets Cracker </a>
+          
+            
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-8">© 2021 pets HUB —
+              <a href="https://twitter.com/weeduu619" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">contact@petscracker.com</a>
+            </p>
+            
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-8 justify-center sm:justify-start">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </footer>
+  
+  
+       </div>
+
+
+
+       <script src="lib/jquery/jquery-3.4.1.min.js"></script>
+       <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+       <script src="home.js"></script>
+
+
+</body>
+</html>

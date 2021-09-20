@@ -1,0 +1,140 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.home{
+    font-family: Georgia, serif;
+}
+.home{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.2)), url(lib/images/bg2.jpg);
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+
+}
+.homearticle{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.2)), url(PC/PC/images/final\ blog.jpg);
+    height: 730px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.promotionpage{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.2)), url(PC/PC/images/promotion.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.homearticlesingle{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.2)), url(PC/PC/images/BLOGS.png);
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.front{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.2)), url(PC/PC/images/pexels-pixabay-45201.jpg);
+        height: 800px;
+        background-size:cover;
+        background-position: center;
+    
+    
+}
+.home2{
+    text-align: center;
+    margin-top: 19%;
+    font-size: 60px;
+    color: whitesmoke ;
+    opacity: 0.7;
+}
+.promotiontext{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black ;
+    opacity: 0.8;
+}
+.btnlogin{
+    margin-top: 30px;
+    margin-left: 40%;
+}
+.about2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 70px;
+}
+.aboutsingle{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 70px;
+}
+.featured2{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+.about3{
+    
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.about4{
+    font-size: 250%;
+    font-family: serif;
+}
+.team2{
+    font-size: 40px;
+    text-align: center;
+    
+}
+.portfolio2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 70px;
+}
+.grooming{
+    font-family: serif;
+    font-size: 230%;
+    position: relative;
+    left: 3%;
+    bottom: 60%;
+    color:black;
+    opacity: 0.7;
+}
+.fitness{
+    font-family: serif;
+    font-size: 250%;
+    position: relative;
+    left: 25%;
+    bottom: 60%;
+    color: black;
+    opacity: 0.7;
+}
+.fashion{
+    font-family: serif;
+    font-size: 250%;
+    position: relative;
+    left: 20%;
+    bottom: 60%;
+    color: black;
+    opacity: 0.7;
+}
+.model{
+    font-family: serif;
+    font-size: 250%;
+    position: relative;
+    left: 25%;
+    bottom: 60%;
+    color: black;
+    opacity: 0.7;
+}
+
+
+
+
